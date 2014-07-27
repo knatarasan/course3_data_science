@@ -1,6 +1,10 @@
-Final dataset uses following columns
+Final dataset uses following Variables
+
+All values are mean and standard deviation with 180 rows and 68 columns
+
 
 1	subject : Subjec name
+It is from 1 to 30
 2	label	: Activity name, will be one of the following
 
  WALKING
