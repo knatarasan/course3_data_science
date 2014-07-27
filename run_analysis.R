@@ -1,7 +1,7 @@
 #Set working directory
 #setwd("/home/kannappan/r/course3")
 
-setwd(".")
+
 
 #Read train data
 Train.core<-read.table("train/X_train.txt")
@@ -56,7 +56,7 @@ colnames(data.mean.std)<-colnames.All_data
 final.data<-aggregate(data.mean.std[,3:ncol(data.mean.std)],by=list(subject=data.mean.std$subject,label=data.mean.std$label),mean)
 
 #Write data to file
-write.table(final.data,"final_data2.txt",row.names=F,col.names=F,quote=FALSE)
+write.table(final.data,"final_data.txt",row.names=F,col.names=F,quote=FALSE)
 
 
 
